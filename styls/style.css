@@ -1,5 +1,5 @@
 /*
-Header Sectiob style
+Header Section style
 */
 body{
     font-family: 'Open Sans', sans-serif;
@@ -8,33 +8,23 @@ body{
     font-size: 45px;
     font-weight: 700;
     color: rgba(19, 19, 19, 1);
-    margin-left: 190px;
+    margin-left: auto;
 }
 .header-about{
     font-size: 18px;
     font-weight: 500;
     margin-top: 66px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 400px;
 }
 .header-about a{
     text-decoration: none;
     color: rgba(66, 66, 66, 1);
     padding: 0 0px;
 }
-.home{
-    margin-left: 430px;
-}
-.about{
-    margin-left: 50px;
-}
-.contact-us{
-    margin-left: 50px;
-}
-.login{
-    margin-left: 50px;
-}
-.g3-flex{
-    display: flex;
-}
+
 .brand{
     font-weight: 700;
     font-size: 64px;
@@ -50,7 +40,8 @@ body{
     font-size: 16px;
     font-weight: 400;
     color: rgba(114, 114, 114, 1);
-    margin: 0px 360px 25px;
+    width: 50%;
+    margin: 0 auto 10px;
 }
 .explore-head1{
     display: flex;
@@ -72,21 +63,33 @@ body{
     justify-content: center;
 }
 .banner img{
-    width: 75%;
+    width: 70%;
     height: 500px;
     margin-bottom: 30px;
 }
 .section-1{
     background-color: rgba(255, 144, 14, 0.1);
 }
+.mes{
+    display: flex
+}
 
-/* 
-Header Section mobile responsive
- */
 
- @media only screen and (max-width:676px) {
-    
- }
+ 
+ @media only screen and (max-width:768px) {
+    .mes{
+        flex-direction: column;
+    }
+    .g3{
+        margin: auto;
+    }
+    .brand-p{
+        width: 80%;
+        margin: 0 auto 10px;
+    }
+ } 
+
+
 
  /* 
  Main part section 1 style
@@ -100,7 +103,7 @@ Header Section mobile responsive
   }
   .section-2{
     display: flex;
-    margin-left: 180px;
+    margin-left: 13%;
     margin-right: 30px;
     margin-bottom: 40px;
   }
@@ -136,7 +139,7 @@ Header Section mobile responsive
     font-size: 16px;
     font-weight: 400;
     color: rgba(114, 114, 114, 1);
-    margin-right: 155px;
+    width: 70%;
   }
 .team-pra-section{
     margin: auto auto;
@@ -144,6 +147,28 @@ Header Section mobile responsive
 .main-part-1{
     margin-top: 40px;
 }
+@media only screen and (max-width:768px) {
+.section-2{
+    flex-direction: column-reverse;
+}
+.team-image{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+}
+.section-2{
+    margin: 0;
+}
+
+.team-p{
+    width: 50%;
+}
+.team-pra-section{
+    margin-left: 26%;
+    margin-bottom: 20px;
+}
+}
+
 
 /* 
 Main part-2 style
@@ -186,8 +211,9 @@ Main part-2 style
 }
 .section-3{
     display: flex;
-    margin-top: 80px;
+    margin: 80px 14%;
 }
+
 .button3{
     background-color: rgba(255, 144, 14, 1);
     border: 1px solid rgba(255, 144, 14, 1);
@@ -208,9 +234,29 @@ Main part-2 style
     font-weight: 400;
     color: #FFFFFF;
 }
-.article-header{
-    margin-left: 100px;
-    margin-top: 30px;
+.arti-img{
+    width: 500px;
+}
+
+@media only screen and (max-width:768px) {
+    .section-3{
+        flex-direction: column-reverse;
+    }
+    .button3{
+        left: +40%;
+    }
+    .arti-img{
+        width: 80%;
+    }
+    .article-header{
+        margin-left: 0px;
+    }
+    .article-head{
+        width: 400px;
+    }
+    .section3-pra{
+        width: 400px;
+    }
 }
 
 /* 
@@ -229,21 +275,21 @@ main part 3 style
     width: 600px;
 }
 .main3-head{
-    margin-left: 200px;
+    margin-left: 10%;
     margin-bottom: 50px;
 }
 .icone-head{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 110px;
-    margin-left: 250px;
-    margin-right: 250px;
+    grid-column-gap: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 .icone-header{
     border: 1px solid rgba(255, 144, 14, 1);
     text-align: center;
     padding: 20px;
-}
+    margin: 0 auto;}
 .letter{
     font-size: 30px;
     font-weight: 600;
@@ -266,10 +312,23 @@ main part 3 style
 .award-name:hover{
     color: rgba(255, 255, 255, 1);
 }
-.section-3{
+.section-4{
     margin-bottom: 100px;
 }
-
+@media only screen and (max-width:768px) {
+    .main3-head{
+        margin-left: auto;
+    }
+    .icone-head{
+        margin-left: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        grid-column-gap: 5%;
+    }
+    .section-4{
+        margin-left: 16px;
+    }
+}
 /* 
 footer part style
 */
@@ -278,15 +337,18 @@ footer part style
     font-weight: 700;
     color: rgba(19, 19, 19, 1);
     margin: 0;
+    text-align: center;
 }
 .footer-pra{
     font-size: 16px;
     font-weight: 400;
     color: rgba(114, 114, 114, 1);
-    margin: 10px 490px 40px;
+    width: 20%;
+    margin: 0 auto;
+    text-align: center;
 }
 .footer-head{
-    text-align: center;
+    margin-bottom: 20px;
 
 }
 .sponspors{
@@ -295,6 +357,23 @@ footer part style
     margin-left: 150px;
     margin-right: 150px;
     margin-bottom: 50px;
+}
+@media only screen and (max-width:768px){
+    .footer-pra{
+        width: 50%;
+    }
+    .img-end{
+        width: 80px;
+    }
+    .sponspors{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        column-gap: 5%;
+        margin: 0;
+    }
+    .sopi{
+        margin-left: 10px;
+    }
 }
 
 /*
