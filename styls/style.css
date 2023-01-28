@@ -251,9 +251,10 @@ Main part-2 style
     }
     .button3{
         left: +25%;
+        top: -50px;
     }
     .arti-img{
-        width: 60%;
+        width: 300px;
         margin-left: 0;
         margin-right: 0;
         margin-left: 10%;
