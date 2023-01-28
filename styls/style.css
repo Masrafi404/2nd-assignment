@@ -41,6 +41,7 @@ body{
     font-weight: 400;
     color: rgba(114, 114, 114, 1);
     width: 50%;
+    text-align: center;
     margin: 0 auto 10px;
 }
 .explore-head1{
@@ -69,6 +70,7 @@ body{
 }
 .section-1{
     background-color: rgba(255, 144, 14, 0.1);
+    width: 100%;
 }
 .mes{
     display: flex
@@ -81,7 +83,7 @@ body{
         flex-direction: column;
     }
     .g3{
-        margin: auto;
+        margin: 0;
     }
     .brand-p{
         width: 80%;
@@ -154,6 +156,7 @@ body{
 .team-image{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    margin: 0;
     margin: auto;
 }
 .section-2{
@@ -164,7 +167,7 @@ body{
     width: 50%;
 }
 .team-pra-section{
-    margin-left: 26%;
+    margin-left: 15%;
     margin-bottom: 20px;
 }
 }
@@ -211,7 +214,7 @@ Main part-2 style
 }
 .section-3{
     display: flex;
-    margin: 80px 14%;
+    margin: 80px %;
 }
 
 .button3{
@@ -222,7 +225,7 @@ Main part-2 style
     height: 100px;
     position: relative;
     top: -75px;
-    left: -50px;
+    left: +200px;
 }
 .year{
     font-size: 35px;
@@ -236,26 +239,35 @@ Main part-2 style
 }
 .arti-img{
     width: 500px;
+    margin-left: 50%;
 }
-
+.article-header{
+    margin-left: 40%;
+}
 @media only screen and (max-width:768px) {
     .section-3{
         flex-direction: column-reverse;
+        margin-right: 0;
     }
     .button3{
-        left: +40%;
+        left: +25%;
     }
     .arti-img{
-        width: 80%;
+        width: 60%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-left: 10%;
+        margin-top: 20px;
     }
     .article-header{
-        margin-left: 0px;
+        margin-left: 3%;
     }
     .article-head{
-        width: 400px;
+        width: 80%;
     }
     .section3-pra{
-        width: 400px;
+        width: 80%;
+        margin: 0;
     }
 }
 
@@ -275,7 +287,7 @@ main part 3 style
     width: 600px;
 }
 .main3-head{
-    margin-left: 10%;
+    margin-left: 12%;
     margin-bottom: 50px;
 }
 .icone-head{
@@ -315,18 +327,32 @@ main part 3 style
 .section-4{
     margin-bottom: 100px;
 }
+.icone-header{
+    width: 60%;
+}
 @media only screen and (max-width:768px) {
     .main3-head{
         margin-left: auto;
     }
     .icone-head{
-        margin-left: 10px;
-        margin-left: auto;
-        margin-right: auto;
-        grid-column-gap: 5%;
+        margin-left: 0px;
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        margin-right: 0;
+    }
+    .icone-header{
+        width: 40%;
     }
     .section-4{
         margin-left: 16px;
+    }
+    .main3-pra{
+        width: 450px;
+    }
+    
+    .cus-png{
+        padding-left: 25px;
+        padding-right: 25px;
     }
 }
 /* 
@@ -361,18 +387,23 @@ footer part style
 @media only screen and (max-width:768px){
     .footer-pra{
         width: 50%;
+        margin: 0;
+        margin: auto;
     }
     .img-end{
         width: 80px;
     }
     .sponspors{
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        column-gap: 5%;
+        grid-template-columns: repeat(3, 1fr);
+        /* column-gap: 5%; */
         margin: 0;
     }
     .sopi{
         margin-left: 10px;
+    }
+    .main3-pra{
+        width: 80%;
     }
 }
 
